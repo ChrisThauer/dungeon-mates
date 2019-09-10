@@ -1,9 +1,9 @@
 import React from 'react';
 
-import './group-list.scss';
+import './groups.scss';
 import NewGroup from '../../components/new-group/new-group';
 
-class GroupList extends React.Component {
+class Groups extends React.Component {
   constructor(props) {
     super(props);
 
@@ -27,4 +27,4 @@ class GroupList extends React.Component {
   }
 }
 
-export default GroupList;
+export default Groups;
