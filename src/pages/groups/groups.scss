@@ -1,0 +1,12 @@
+.groups {
+  width: 80vw;
+  margin: 50px auto;
+  text-align: center;
+
+  .group-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}

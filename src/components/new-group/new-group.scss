@@ -2,8 +2,8 @@ $primary-color: #d00001;
 $hover-color: #ff0001;
 
 .new-group {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   border: 3px solid $primary-color;
   color: $primary-color;
   border-radius: 15px;
@@ -14,13 +14,12 @@ $hover-color: #ff0001;
     border-color: $hover-color;
     color: $hover-color;
     box-shadow: 1px 1px 1px #c8c8c8;
-    transform: scale(1.02);
   }
 
   .text {
-    font-size: 1.5rem;
+    height: 55px;
+    font-size: 1.1rem;
     text-align: center;
-    margin: 0;
-    padding: 20px 0;
+    margin: 12px 0 0 0;
   }
 }

@@ -2,6 +2,7 @@ import React from 'react';
 
 import './groups.scss';
 import NewGroup from '../../components/new-group/new-group';
+import GroupSelector from '../../components/group-selector/group-selector';
 
 class Groups extends React.Component {
   constructor(props) {
@@ -11,7 +12,13 @@ class Groups extends React.Component {
       groups: [
         {
           name: 'Dragon Heist',
+          system: 'D&D 5E',
           players: 5
+        },
+        {
+          name: 'Storm King\'s Thunder',
+          system: 'D&D 5E',
+          players: 4
         }
       ]
     }
@@ -19,9 +26,16 @@ class Groups extends React.Component {
 
   render() {
     return (
-      <div className="group-list">
-        <h1>Group List</h1>
-        <NewGroup />
+      <div className="groups">
+        <h1>Groups</h1>
+        <div className="group-list">
+          {
+            this.state.groups.map(group => (
+              <GroupSelector name={group.name} system={group.system} players={group.players} />
+            ))
+          }
+          <NewGroup />
+        </div>
       </div>
     )
   }

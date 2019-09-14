@@ -1,0 +1,27 @@
+.group-selector {
+  width: 250px;
+  height: 75px;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.1s linear;
+
+  &:hover {
+    border-color: #686868;
+    box-shadow: 3px 3px 5px #c7c7c7;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    height: 33%;
+    align-items: center;
+
+    .row-header {
+      padding: 0 10px;
+      font-weight: bold;
+    }
+  }
+}
